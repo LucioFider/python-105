@@ -53,5 +53,17 @@ print(users)
 data.clear()
 print(data)
 
+# sort 
+users[1:2]=["dave"]
+users.sort()
+print(users)
 
+users.sort(key=str.lower)
+print(users)
 
+nums=[4,42,78,1,5]
+nums.reverse()
+print(nums)
+
+nums.sort(reverse=True)
+print(nums)
