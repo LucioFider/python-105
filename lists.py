@@ -65,5 +65,47 @@ nums=[4,42,78,1,5]
 nums.reverse()
 print(nums)
 
-nums.sort(reverse=True)
+# nums.sort(reverse=True)
+# print(nums)
+
+print(sorted(nums, reverse=True))
 print(nums)
+
+numscopy=nums.copy()
+mynums=list(nums)
+mycopy=nums[:]
+
+print(numscopy)
+print(mynums)
+mycopy.sort()
+print(mycopy)
+print(nums)
+
+print(type(nums))
+
+
+mylist = list([1,"Neil", True])
+print(mylist)
+
+#tuples
+
+mytuple= tuple(('Dave',42,True))
+
+anothertuple=(1,4,2,8)
+
+print(mytuple)
+print(type(mytuple))
+print(type(anothertuple))
+
+
+newlist=list(mytuple)
+newlist.append('Neil')
+newtuple=tuple(newlist)
+print(newtuple)
+
+(*one,two,hey)=anothertuple
+print(one)
+print(two)
+print(hey)
+
+print(anothertuple.count(2))
